@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+header{
+    z-index: 999;
+}
 header .width-max nav{
     display: flex;
     justify-content:space-evenly;
@@ -56,6 +58,7 @@ header .banner{
     background-attachment: fixed;
     height: 850px;
     perspective: 1000px;
+   
    
     
     
@@ -213,7 +216,7 @@ main .sobre .sobre_text div:last-of-type{
     height: 30%;
 
 }
-main .sobre .sobre_text div:last-of-type a, .galeria_projetos .nav a{
+main .sobre .sobre_text div:last-of-type a, .galeria_projetos .nav a, button{
     text-decoration: none;
     margin: 50px 0 ;
     border: 1px solid #efd81d;
@@ -222,7 +225,7 @@ main .sobre .sobre_text div:last-of-type a, .galeria_projetos .nav a{
     box-shadow: none;
     transition: 1s;
 }
-main .sobre .sobre_text div:last-of-type a:hover, .galeria_projetos .nav a:hover{
+main .sobre .sobre_text div:last-of-type a:hover, .galeria_projetos .nav a:hover, button:hover{
     background-color: #efd81d;
     color: #000000;
     transition: 2s; 
@@ -449,6 +452,21 @@ footer .width-max nav img{
    
     
 }
+main .arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:100px ;
+    
+    
+}
+main .arrow img{
+    width: 35px;
+    background-color: #fff;
+    transform: rotate(-90deg);
+    border-radius: 30%;
+    opacity: 0.6;
+    
+}
 footer .width-max nav a:hover{
    transform: rotatey(360deg);
    border-bottom:1px solid #efd81d;
@@ -533,17 +551,21 @@ p, label, option, select, textarea{  font-family: 'Nova Square';
 option, select{
     font-size: 15px;
 }
-a{
+a, button{
     font-size: 15px;
    font-family: 'orbitron';
 
     
 }
-h2, p, a, label{
+h2, p, a, label, button{
     color: #fff;
 }
+button{
+    background-color: #071e2600;
+}
 #sobre{
-    background:linear-gradient(to bottom,#000000,#071e26, #0f3c4c)
+    background:linear-gradient(to bottom,#000000,#071e26, #0f3c4c);
+    
 }
 #projetos{
     background:linear-gradient(to bottom,#134b5f,#1a6985,#1a6985, #134b5f );
