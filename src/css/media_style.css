@@ -9,12 +9,18 @@
     header .banner .width-max div:last-of-type{
         margin-top: 50px;
     }
-    .banner .banner_text div p:nth-child(1), .saudacao{
+    .banner .banner_text div p:nth-child(1){
         font-size: 80px;
     }
     .banner .banner_text div p:nth-child(2){
        font-size: 20px;
-       margin-top: 15px;
+       margin-top: 12px;
+    }
+    header .banner .width-max div:last-of-type .saudacao{
+        font-size: 40px
+    }
+    .banner .banner_text .saudacao_1{
+        display: none;
     }
     main .width-max, footer .width-max{
         width: 90%;
@@ -70,7 +76,10 @@ and     (max-width:768px){
     }
     .banner .banner_text div p:nth-child(2){
        font-size: 20px;
-       margin-top: 15px;
+       margin-top: 20px;
+    }
+    .banner .banner_text .saudacao_1{
+        display: none;
     }
     main .width-max, footer .width-max{
         width: 90%;

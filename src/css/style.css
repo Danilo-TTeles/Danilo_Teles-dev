@@ -58,7 +58,7 @@ header .banner .width-max div:last-of-type{
     font-family: 'Nova Square', sans-serif;  
 }
 .banner .banner_text div{
-    animation: 6s both ease-in-out nome;
+    animation: 4s both ease-in-out nome;
     animation-delay: 6s;
     position: absolute;  
 }
@@ -73,11 +73,15 @@ header .banner .width-max div:last-of-type{
     font-family: 'orbitron', sans-serif;   
 }
 header .banner .width-max div:last-of-type .saudacao_1{
-    animation: 5s both ease-in-out saudacao;
-    animation-delay: 6s;
+    animation: 10s both ease-in-out saudacao;
+    animation-delay: 4s;
+    margin-bottom: 20px;
+}
+header .banner .width-max div:last-of-type .saudacao_1 p span{
+    animation: 10s both ease-in-out saudacao;
 }
 header .banner .width-max div:last-of-type .saudacao{
-    font-size: 80px;
+    font-size: 60px;
     animation: 5s both ease-in-out saudacao;  
 }
 @keyframes saudacao{
