@@ -1,0 +1,129 @@
+ @media (max-width:480px){
+    header .width-max  .logo, .logo_c, .logo_j, .logo_git, .logo_hub, .logo_vs{
+        animation: none;
+        display: none;
+    }
+    header .banner{
+        height: 400px;
+    }
+    header .banner .width-max div:last-of-type{
+        margin-top: 50px;
+    }
+    .banner .banner_text div p:nth-child(1), .saudacao{
+        font-size: 80px;
+    }
+    .banner .banner_text div p:nth-child(2){
+       font-size: 20px;
+       margin-top: 15px;
+    }
+    main .width-max, footer .width-max{
+        width: 90%;
+    }
+    main .width-max .sobre{
+        flex-direction: column;
+        
+    }
+    main .sobre .sobre_text{
+        width: 100%;
+        text-align: center;
+    }
+    main .sobre .sobre_img{
+        margin: 0 auto;
+    }
+    main .card {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    main .projetos_card_4{
+        display: none;
+    }
+    main .width-max .contato{
+    flex-direction: column-reverse;        
+    }
+    main .width-max .contato div{
+        width: 100%;
+        padding-top: 50px;
+    }
+    main .arrow{
+        margin-right: 10px;
+    }
+    footer p, .direitos{
+        font-size: 16px;
+        text-align: center;
+    }
+ }
+   
+ @media (min-width:481px)
+and     (max-width:768px){
+    header .width-max  .logo, .logo_c, .logo_j, .logo_git, .logo_hub, .logo_vs{
+        animation: none;
+        display: none;
+    }
+    header .banner{
+        height: 600px;
+    }
+    header .banner .width-max div:last-of-type{
+        margin-top: 100px;
+    }
+    .banner .banner_text div p:nth-child(1), .saudacao{
+        font-size: 120px;
+    }
+    .banner .banner_text div p:nth-child(2){
+       font-size: 20px;
+       margin-top: 15px;
+    }
+    main .width-max, footer .width-max{
+        width: 90%;
+    }
+    main .width-max .sobre{
+        flex-direction: column; 
+    }
+    main .sobre .sobre_text{
+        width: 100%;
+        text-align: center;
+    }
+    main .sobre .sobre_img{
+        margin: 0 auto;
+    }
+    main .card {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content:space-around;
+    }
+    main .projetos_card_4{
+        display: none;
+    }
+    main .width-max .contato{
+        flex-direction: column-reverse;        
+        }
+     main .width-max .contato div{
+         width: 100%;
+        padding-top: 50px;
+    }
+    main .arrow{
+        margin-right: 30px;
+    }
+    footer p, .direitos{
+        text-align: center;
+    }
+}
+
+@media (min-width:769px)
+and     (max-width:1024px){
+    @keyframes rotacao{
+        0%{transform: translatex(0px);
+        }
+        25%{transform:translate(-350px, 250px);   
+        }
+        50%{transform: translatey(600px);      
+        }
+        75%{transform: translate(320px, 250px);   
+        }  
+        100%{transform: translateX(0px);
+        }
+    }
+    main .width-max, footer .width-max{
+        width: 90%;
+    } 
+}
+ 
