@@ -4,9 +4,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header{
-    z-index: 999;
-}
 header .width-max nav{
     display: flex;
     justify-content:space-evenly;
@@ -34,7 +31,7 @@ header .width-max nav:hover :not(:hover){
 }
 header .width-max nav a:hover{
     scale: 1.2;
-    transition: 1s linear;
+    transition: 0.2s linear;
     text-shadow: 0 0px 10px yellow;
     
 }
@@ -191,6 +188,10 @@ header .banner .width-max p{
 main{
     background-color: #0f3c4c;
 }
+main #sobre .width-max{
+    display: flex;
+    flex-direction: column;
+}
 main .width-max, footer .width-max{    
     max-width: 1024px;
     margin: 0 auto;
@@ -228,7 +229,7 @@ main .sobre .sobre_text div:last-of-type a, .galeria_projetos .nav a, button{
 main .sobre .sobre_text div:last-of-type a:hover, .galeria_projetos .nav a:hover, button:hover{
     background-color: #efd81d;
     color: #000000;
-    transition: 2s; 
+    transition: 0.5s; 
     
     box-shadow: 0 0 5px #efd81d,
     0 0 25px #efd81d,
@@ -290,7 +291,7 @@ main .card {
     border-radius: 50%;
     border: 13px solid #1e1e1c;
     border-top: 13px solid #efd81d;
-    animation: 4s linear infinite loader ;
+    animation: 3s linear infinite loader ;
 
     
 }
@@ -305,6 +306,7 @@ main .card {
         0 0 50px #efd81d,
         0 0 150px #efd81d;
         background-color: #1e1e1c;
+
         
     }
     100%{transform: rotate(360deg);
@@ -315,7 +317,7 @@ main .card {
     position: absolute;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: all 2s ease;
+    transition: all 1s ease;
     border: 1px solid gray;
     width: 100%;
     height: 100%;
@@ -564,14 +566,11 @@ button{
     background-color: #071e2600;
 }
 #sobre{
-    background:linear-gradient(to bottom,#000000,#071e26, #0f3c4c);
-    
+    background:linear-gradient(to bottom,#000000,#071e26, #0f3c4c);    
 }
 #projetos{
     background:linear-gradient(to bottom,#134b5f,#1a6985,#1a6985, #134b5f );
-    border-radius:50px;
-    
-    
+    border-radius:50px; 
 }
 #contato{
     background:linear-gradient(to bottom,#0f3c4c, #071e26, #000000)
